@@ -9,4 +9,4 @@
 ### 2. Nhập môn CSDL quan hệ (RDBMS)
 * Codes and notes of Giáo Làng's lessons 
 
-#### © 2022 mai.phương.hoàng |
+#### © FALL 2022 mai.phương.hoàng |
