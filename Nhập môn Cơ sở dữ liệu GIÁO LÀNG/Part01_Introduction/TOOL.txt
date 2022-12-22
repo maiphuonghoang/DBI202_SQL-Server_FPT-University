@@ -1,0 +1,86 @@
+public class Student {
+
+	private String id;
+	private String name;
+	private int yob;
+	private double gpa;
+
+	public Student(String id; String name; int yob; double gpa) {
+		this.id = id;
+		this.name = name;
+		this.yob = yob;
+		this.gpa = gpa;
+	}
+	
+	//...
+}
+
+Sudent 			an		=	new Student("SE123456", "An Nguyễn", 2003, 9.0);
+class/mold 			biến object 				object/instance
+data type			object var				thể hiện/hiện thân/phiên bản/đối tượng 
+object data type		reference var
+				"pointer"
+
+Student			binh 		= 	new Student(...);
+				
+			  instance name 
+
+
+C:\Program Files\...
+			  sqlsrv.exe		-> đi vào RAM chờ ai đó yêu cầu xử lí data
+							-> INSTANCE
+							   INSTANCE 1 server/đoạn code binary
+							nằm trong ram - đc đặt tên, giống tên biến 
+
+WINDOWS CÓ 1 DATA NỘI BỘ (DẠNG CÂY PHÂN CẤP) QUẢN LÍ THÔNG SỐ MÁY, CÁC APP CÀI VÀO...
+-> REGISTRY
+
+CLASS 			~~~~~~~~~~~~	TABLE
+
+INSTANCE  new Student()				row/tuple/record
+
+
+APP CHẠY NGẦM, KO LỘ RÕ RA, KO CÓ UI/USER INTERFACE ĐỂ TA DÙNG CHUỘT TƯƠNG TÁC 
+		   KO CÓ MẶT TIỀN, BACKGROUND PROCESS, CHƯƠNG TÌNH CHẠY NỀN 
+		   KO LỘ RA TRÊN TASKBAR
+DÙNG CUNG CẤP DỊCH VỤ CHO AI ĐÓ XÀI NÓ
+APP NÀY GỌI TÊN KHÁC LÀ SERVICE/SERVICES, PHỤC VỤM HÀNH ĐỘNG, ICON/BIỂU TƯỢNG CHUNG LÀ 
+2 BÁNH RĂNG CƯA - ĐỘNG CƠ - RUN - ENGINE
+
+SERVE (V) -> SERVER -> GÃ CHUYÊN PHỤC VỤ 
+SQLSERVER TRONG RAM GỌI LÀ: SERVICE, SERVER, DB ENGINE, BACKGROUND PROCESS
+
+CẦN NÓ PHỤC VỤ THÌ MÌNH PHẢI GIAO TIẾP VỚI NÓ, CHUỘT/PHÍM -> CHẠM ĐƯỢC SERVER
+CHẾ RA 1 TOOL	--------------------------------->	SERVER
+				giao tiếp, tương tác vào 
+			<---------------------------------
+				trả về kết quả
+MOUSE, KEYBOARD
+	UI
+USER INTERFACE 
+
+tool SSMS-SQL Server Management Studio  <----------> 	Instance/DB E/Serv...
+CLIENT TOOL								SERVER
+1 bên phục vụ							bên yêu cầu phục vụ 
+
+
+BROWER	     ---------------------------------->   SERVER FB, TT, KENH14
+
+TOOL/PHẦN MỀM THẤY TRÊN TASKBAR, UI TƯƠNG TÁC
+	FOREGROUND 
+
+				
+
+SQL: Structured Query Language
+Ngôn ngữ, câu lệnh giúp giao tiếp với DB Engine để thao tác, 
+lưu trữ, xử lí dữ liệu dưới dạng TABLE - RELATION - BẢNG 
+
+
+Column/Attribute/Field
+Row/Record/Tuple
+trong Shell sẽ có Value/Data Item
+
+* Dòng & Cột không quan tâm thứ tự (unordered)
+		 trên, dưới, trước, sau không ảnh hưởng ý nghĩa 
+
+

@@ -1,0 +1,110 @@
+DATABASE - DATA & BASE 
+
+- Dữ liệu nền tảng/nền móng/căn bản/cốt lõi, giúp cho app/pm vận hành
+- Việc thiết kế cách thức lưu trữ dữ liệu rất quan trọng , vì nó cần đảm bảo cho 2 thứ:	
+	- Lưu trữ CUD - Create/Update/Delete 
+	- Truy xuất R - Retrieve/Read
+ 	(CRUD)
+
+- Nhiều trường phái để thiết kế cách lưu trữ dữ liệu, nay chỉ thấy còn phổ biến 2 trường phái:
+	Relational Model/SQL <Mô hình quan hệ>  vs.  NoSQL
+		Table						   BigData - dữ liệu "cực" nhiều 
+
+- Bàn về lưu trữ data của 1 app, thường sẽ đi qua 2 giai đoạn 
+	- Thiết kế/Nhận diện về các "thực thể - entity" dữ liệu sẽ cần lưu trữ. Nhận dạng 
+quanh bài toán của ta coi có những "đối tượng" dữ liệu nào. Phác thảo ra những gì cần 
+lưu trữ, chưa nói cụ thể - CONCEPTUAL DIAGRAM/LEVEL - LOGICAL LEVEL/DIAGRAM
+ (mô hình hóa/vẽ ra việc cần lưu trữ thông tin ở mức ý niện/ý tưởng/khái niệm/chung chung)
+	  * KO VẼ TỰ DO, VẼ THEO CÁCH THỨC NÀO ĐÓ, ERD LÀ CÁCH CHUẨN 
+	    ENTITY RELATIONSHIP DIAGRAM 
+
+	- Mức thi công/mức triển khai cụ thể: tui mún cất/lưu 1 miếng data liên quan đến 
+đơn hàng, nv, sv..làm sao??? cho xem việc lưu và xem lại kết quả... - PHYSICAL LEVEL/DIAGRAM 
+	  * CONVERT CÁI SƠ ĐỒ ERD XUỐNG 1 PHẦN MỀM CỤ THỂ GIÚP MÌNH LƯU TRỮ ĐC DATA TRONG BÀI TOÁN 
+	 	Excel giúp ta lưu số liệu tính toán
+		Word giúp ta lưu trữ các dữ liệu đơn từ, văn bản
+		PDF								 dưới dạng cuốn sách 
+	  Có phần mềm tương ứng giúp ta lưu trữ đc dữ liệu trong các bài toán lập trình - app
+viết cho người dùng nói chung - giúp lưu trữ data dùng trong doanh nghiệp (nghiệp vụ 
+kinh doanh - HỆ QUẢN TRỊ CƠ SỞ DỮ LIỆU 
+	     - DBMS - DATABASE MANAGEMENT SYSTEM 
+	     - VÌ CÓ 2 MÔ HÌNH NỔI TIẾNG VỀ THIẾT KẾ VÀ LƯU TRỮ DATA
+	     - 2 LOẠI DBMS
+			- R-DBMS là cái mình tập trung hôm nay  - HỆ QUẢN TRỊ CSDL QUAN HỆ
+										RELATIONAL-DBMS
+					DỰA TRÊN SQL/TABLE 
+			ORACLE, DB2, SQLSERVER, MYSQL, POSTGRESQL, SQLITE (nhúng) 
+
+			- NOSQL-DBMS: MONGODB,... 
+* DBMS: LÀ 1 PHẦN MỀM GIÚP TA LƯU TRỮ DỮ LIỆU TRONG DOANH NGHIỆP, LÀM NỀN CHO APP XỬ LÍ, 
+NÓ GIAO TIẾP VỚI CÁC NGÔN NGHỮ LẬP TRÌNH ĐỂ GIÚP TƯƠNG TÁC, XỬ LÍ, LƯU TRỮ 
+
+* DBMS HẦU HẾT HOẠT ĐỘNG THEO NGUYÊN LÍ CLIENT/SERVER
+	- PHẦN LÕI, SERVER: quản lí data cho mình, sẵn sàng giao tiếp với user nói chung, 
+app nói riêng/NNLT
+	- PHẦN CLIENT: chính là app của mình hoặc tool kết nối với server (GUI, CMD)
+
+* MẶC ĐỊNH CÁC DBMS KHI BÁN, CHO DOWNLOAD THƯỜNG SẼ ĐI THEO GÓI COMBO, 
+SERVER (CHẠY NGẦM Ở SERVICES) + CLIENT TOOL (GUI)
+
+*DBMS/PHẦN SERVER NÓ SẼ LƯU TRỮ CÁC DATA CỦA MÌNH/APP/USER/DOANH NGHIỆP 
+DƯỚI DẠNG CÁC DATABASE -  TẬP TIN TRÊN HDD/SSD (~~~ .docx .xlsx)
+					    GỌI LÀ DATABASE - DỮ LIỆU NỀN CHO MỌI NƠI DÙNG
+	- muốn lấy, thao tác data xin phép kết nối và nhờ vả SERVER NẰM NGẦM
+											(background process)
+			dùng 1 tool/gui để kết nối đến server
+				  CLIENT TOOL/FORE - GROUND process 
+				  	   nằm trên taskbar 
+* RDBMS LƯU TRỮ DATA DƯỚI DẠNG TABLE/ CỘT VÀ HÀNG 	| NOSQL KO CHƠI "TABLE" 
+
+* nếu chỉ nhìn ở design level/conceptual level - RELATION/ENTITY
+
+* nhìn ở giai đoạn hiện thực/lưu trữ thật trên DBMS nào đó, - TABLE 
+
+* KHI THIẾT KẾ VIỆC LƯU TRỮ DỮ LIỆU (chưa care về logic/conceptual hay physical) 
+  CÓ 1 BỘ TIÊU CHUẨN ĐÁNH GIÁ CHẤT LƯỢNG CỦA VIỆC THIẾT KẾ/HIỆN THỰC
+  BỘ TIÊU CHUẨN NÀY MANG TÊN: NORMALIZATION FORM - NF, DẠNG CHUẨN CSDL
+  mục tiêu NF: đánh giá thiết kế/ việc lưu trữ dữ liệu ổn đến mức nào???
+									 giá phải trả là gì nếu ko ổn
+  BỘ TIÊU CHUẨN GỒM NHIỀU TIÊU CHUẨN CON, MỨC ĐÁNH GIÁ: 1NF, 2NF, 3NF, BCNF 
+
+* DẠNG CHUẨN CHÍNH LÀ CÁCH ĐÁNH GIÁ 1 TABLE CÓ N CỘT CÓ ỔN KO? NẾU KO ỔN THÌ NÓ SẼ BỊ VẤN ĐỀ GÌ 
+
+* TABLE/REALTION/ENTITY: DỮ LIỆU ĐC LƯU TRỮ THEO HÀNG VÀ CỘT
+	- HÀNG, ROW, TUPLE, 'RECORD: là 1 đối tượng dữ liệu bạn cần lưu trữ, đối tượng này 
+chứa các miếng thông tin/chính là các cột kèm value 
+	- CỘT, FIELD, COLUMN, TRƯỜNG DỮ LIỆU, ATTRIBUTE/PROPERTY: 1 mảnh thông tin biểu diễn
+về đối tượng dữ liệu 
+
+TABLE STUDENT 
+		Id  |  Fullname  | DOB    | Address  | ...
+-> obj/new	SE1	AN NGUYỄN   1/1/2021   HCM
+thiết kế table rồi map ngược lại DAO DTO của Java Web -> data first 
+
+OR MAPPING - Object Relation Mapping : biến từ object thành table và ngược lại 
+Hirbernate/JPD -> code first/ object first chỉ quan tâm đến object rồi lát hồi đẩy xuống table 
+Entity Framework -> code first/ object first
+
+* ĐÁNH GIÁ TABLE/THIẾT KẾ TRÊN TỐT HAY XẤU, THÌ TA SẼ NHÌN TRÊN CÁC GÓC NHÌN KHI THAO TÁC DỮ LIỆU CỦA TABLE 
+	- RETRIVE/LƯU TRỮ TRÙNG LẶP HAY KO - REDUNDANCY 
+	- CHÈN THÊM DATA     - INSERTION ANOMALY 
+	- CẬP NHẬT THÊM DATA - UPDATE ANOMALY
+	- XÓA DATA		   - DELETION ANOMALY 
+
+FUCTIONAL DEPENDENCY 
+
+* TIẾN TRÌNH THIẾT KẾ CSDL 
+	- bài toán/khách hàng cung cấp các REQUIREMENTS
+	- VẼ ERD 
+			CONVERT ERD THÀNH PHYSICAL DIAGRAM BÊN DBMS CỤ THỂ 
+	
+	- GIANG HỒ: VẼ ERD = GIẤY, 1 TOOL STARUML, ONLINE TOOL...
+					   CONVERT 
+							= TAY 
+							  CONVERT TỰ ĐỘNG 
+		vẽ xong nhấn nút thế là có table trong SQLServer, MySQL tùy lựa chọn trong tool 
+	- Việc vẽ ko phải vẽ đãi, vì vẽ sai 1 - 1, 1 - N, lúc xuống DBMS ra y chang, ta sẽ
+ko lưu theo ý đồ
+	- VISUAL PARADIGM, POWER DESIGNER, ... 
+ 
+
