@@ -1,0 +1,52 @@
+Departments
+
+IS 	Information Systems		NULL
+NC 	Network and Communication	NULL
+SE 	Software Engineering		NULL
+CE 	Computer Engineering 		NULL
+CS	Computer Science			NULL
+
+Students
+
+S001 	Lê 	Kim Lan 	F	23/02/1990 	Hà nội 	IS 	130000 	NULL
+S002 	Trần 	Minh Chánh 	M 	24/12/1992 	Bình Định 	NC 	150000 	NULL
+S003 	Lê	An Tuyết 	F 	21/02/1991 	Hải phòng 	IS 	170000 	NULL
+S004 	Trần 	Anh Tuấn 	M 	20/12/1993 	TpHCM 	NC 	80000 	NULL
+S005 	Trần	Thị Mai 	F 	12/08/1991 	TpHCM 	SE 	0 	NULL
+S006 	Lê 	Thị Thu Thủy 	F 	02/01/1991 	An Giang 	IS 	0 	NULL
+S007 	Nguyễn 	Kim Thư 	F 	02/02/1990 	Hà Nội 	SE 	180000 	NULL
+S008 	Lê	Văn Long 	M 	08/12/1992 	TpHCM 	IS 	190000 	NULL
+
+Courses
+
+DS01 	Database Systems 	3 
+AI01 	Artificial Intelligence 	3 
+CN01	Computer Network 	3 
+CG01	Computer Graphics 	4 
+DSA1 	Data Structures and Algorithms 	4 
+
+Results
+
+S001 	DS01 	2017	1	3 	NULL
+S001 	DS01	2017	2	6 	NULL
+S001 	AI01 	2017 	1	4.5 	NULL
+S001 	AI01	2017 	2	6 	NULL
+S001 	CN01 	2017 	3	5 	NULL
+S002 	DS01	2016 	1	4.5 	NULL
+S002 	DS01	2017 	1	7 	NULL
+S002 	CN01	2016 	3	10 	NULL
+S002 	DSA1 	2016 	3	9 	NULL
+S003 	DS01	2017 	1	2 	NULL
+S003 	DS01	2017 	3	5 	NULL
+S003 	CN01	2017 	2	2.5 	NULL
+S003 	CN01	2017 	3	4 	NULL
+S004 	DS01	2017 	3	4.5 	NULL
+S004 	DSA1	2018 	1	10 	NULL
+S005 	DS01	2017 	2	7 	NULL
+S005 	CN01	2017 	2	2.5 	NULL
+S005 	CN01	2018 	1	5 	NULL
+S006 	AI01	2018 	1	6 	NULL
+S006 	CN01 	2018 	2	10 	NULL
+
+
+
